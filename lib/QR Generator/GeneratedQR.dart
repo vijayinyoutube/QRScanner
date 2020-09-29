@@ -13,19 +13,16 @@ class GeneratedQR extends StatefulWidget {
 class _GeneratedQRState extends State<GeneratedQR> {
   @override
   Widget build(BuildContext context) {
-    return Hero(
-      tag: "Generete QR",
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text("Generated QR "),
-        ),
-        body: Center(
-          child: QrImage(
-            data: widget.myQR,
-            version: QrVersions.auto,
-            size: 250.0,
-            gapless: false,
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Generated QR "),
+      ),
+      body: Center(
+        child: QrImage(
+          data: widget.myQR,
+          version: QrVersions.auto,
+          size: 250.0,
+          gapless: false,
         ),
       ),
     );

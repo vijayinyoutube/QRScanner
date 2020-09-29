@@ -13,87 +13,95 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        //shape: StadiumBorder(),
         title: Text("QR Scan/Generate"),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              CircleAvatar(
-                backgroundImage: AssetImage(
-                  "images/QR.jpg",
-                ),
-                foregroundColor: Colors.transparent,
-                backgroundColor: Colors.transparent,
-                radius: 150,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      body: Container(
+        child: Container(
+          height: (MediaQuery.of(context).size.height),
+          //- AppBar().preferredSize.height,
+          child: SingleChildScrollView(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(
+                  minHeight: (MediaQuery.of(context).size.height) -
+                      AppBar().preferredSize.height -
+                      kToolbarHeight),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Hero(
-                    tag: "Scan QR",
-                    child: Container(
-                      width: ((MediaQuery.of(context).size.width) / 2) - 45,
-                      height: 50,
-                      child: OutlineButton(
-                        focusColor: Colors.red,
-                        highlightColor: Colors.blue,
-                        hoverColor: Colors.lightBlue[100],
-                        splashColor: Colors.blue,
-                        borderSide: BorderSide(
-                          width: 5,
-                          color: Colors.blue,
-                        ),
-                        shape: StadiumBorder(),
-                        child: Text(
-                          "Scan QR",
-                          style: TextStyle(fontSize: 17),
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => ScanQR()));
-                        },
-                      ),
+                  CircleAvatar(
+                    backgroundImage: AssetImage(
+                      "assets/images/QR.jpg",
                     ),
+                    foregroundColor: Colors.transparent,
+                    backgroundColor: Colors.transparent,
+                    radius: 150,
                   ),
-                  SizedBox(
-                    width: 25,
-                  ),
-                  Hero(
-                    tag: "Generete QR",
-                    child: Container(
-                      width: ((MediaQuery.of(context).size.width) / 2) - 45,
-                      height: 50,
-                      child: OutlineButton(
-                        focusColor: Colors.red,
-                        highlightColor: Colors.blue,
-                        hoverColor: Colors.lightBlue[100],
-                        splashColor: Colors.blue,
-                        borderSide: BorderSide(
-                          width: 5,
-                          color: Colors.blue,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Hero(
+                        tag: "Scan QR",
+                        child: Container(
+                          width: ((MediaQuery.of(context).size.width) / 2) - 45,
+                          height: 50,
+                          child: OutlineButton(
+                            focusColor: Colors.red,
+                            highlightColor: Colors.blue,
+                            hoverColor: Colors.lightBlue[100],
+                            splashColor: Colors.blue,
+                            borderSide: BorderSide(
+                              width: 3,
+                              color: Colors.blue,
+                            ),
+                            shape: StadiumBorder(),
+                            child: Text(
+                              "Scan QR",
+                              style: TextStyle(fontSize: 17),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ScanQR()));
+                            },
+                          ),
                         ),
-                        shape: StadiumBorder(),
-                        child: Text(
-                          "Generate QR",
-                          style: TextStyle(fontSize: 17),
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => QRGenerator()));
-                        },
                       ),
-                    ),
+                      SizedBox(
+                        width: 25,
+                      ),
+                      Container(
+                        width: ((MediaQuery.of(context).size.width) / 2) - 45,
+                        height: 50,
+                        child: OutlineButton(
+                          focusColor: Colors.red,
+                          highlightColor: Colors.blue,
+                          hoverColor: Colors.lightBlue[100],
+                          splashColor: Colors.blue,
+                          borderSide: BorderSide(
+                            width: 3,
+                            color: Colors.blue,
+                          ),
+                          shape: StadiumBorder(),
+                          child: Text(
+                            "Generate QR",
+                            style: TextStyle(fontSize: 17),
+                          ),
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => QRGenerator()));
+                          },
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
-            ],
+            ),
           ),
         ),
       ),
