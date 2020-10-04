@@ -2,7 +2,12 @@
 
 Scan or Generate QR Code 
 
-[![BUILD](https://img.shields.io/badge/Build-OK-<COLOR>.svg)](https://github.com/vijayinyoutube/QRScanner)  [![vijaycreations](https://img.shields.io/website-up-vijaycreations-green-orange/http/cv.lbesson.qc.to.svg)](https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ) [![Repo Status](https://img.shields.io/badge/RepoStatus-Active-blue.svg)](https://github.com/vijayinyoutube/QRScanner) [![MIT license](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/vijayinyoutube/QRScanner) [![Flutter](https://img.shields.io/badge/Built_using-Flutter-blue.svg)](https://github.com/vijayinyoutube/QRScanner)
+[![BUILD](https://img.shields.io/badge/Build-Passing-<COLOR>.svg)](https://github.com/vijayinyoutube/QRScanner)  [![vijaycreations](https://img.shields.io/badge/Follow_me-vijaycreations-orange.svg?&logo=youtube&logoColor=orange)](https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ) [![Repo Status](https://img.shields.io/badge/RepoStatus-Active-blue.svg)](https://github.com/vijayinyoutube/QRScanner) [![MIT license](https://img.shields.io/badge/License-MIT-red.svg)](https://github.com/vijayinyoutube/QRScanner) [![Flutter](https://img.shields.io/badge/_Flutter_-App-grey.svg?&logo=Flutter&logoColor=white&labelColor=blue)](https://github.com/vijayinyoutube/QRScanner) 
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58719230/95013458-0d9cbb80-065e-11eb-9cf7-75757ff7abba.png" width="100%">
+</p>
 
 ## Flutter
 [Flutter](https://flutter.dev/) is a crossplatfrom UI tool kit that helps in developing native Android and iOS app from a single code base.
@@ -17,6 +22,12 @@ qr_flutter: ^3.2.0
 barcode_scan: ^3.0.1
 url_launcher: ^5.7.2
 ```
+
+## Sample Results
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/58719230/95013795-43db3a80-0660-11eb-86d7-273e4ced32d4.png">
+</p>
 
 ## License
 
