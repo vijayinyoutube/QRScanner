@@ -12,10 +12,7 @@ class QRGenerator extends StatefulWidget {
 TextEditingController mycontroller = new TextEditingController();
 
 class _QRGeneratorState extends State<QRGenerator> {
-  // void dispose() {
-  //   mycontroller.dispose();
-  //   super.dispose();
-  // }
+
 
   @override
   Widget build(BuildContext context) {
