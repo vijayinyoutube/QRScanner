@@ -13,13 +13,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        //shape: StadiumBorder(),
+        
         title: Text("QR Scan/Generate"),
       ),
       body: Container(
         child: Container(
           height: (MediaQuery.of(context).size.height),
-          //- AppBar().preferredSize.height,
+         
           child: SingleChildScrollView(
             child: ConstrainedBox(
               constraints: BoxConstraints(
