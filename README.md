@@ -14,6 +14,14 @@ Scan or Generate QR Code
 
 ## App 
  This app allows the user to scan QR Code and subsequently launch them using the ```url_launcher``` dependency. Users can also generate a QR Code for the given input data.
+ 
+Check out the video tutorial  👉 : https://youtu.be/Hq-Ciuc6k0Y
+
+To know more awesome content about Flutter.,
+
+Visit my channel 👉 : https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ
+ 
+ 
 
 ## Dependencies
 
